@@ -1,5 +1,6 @@
 #calculator{
-    border:2px solid rgba(10,10,10,0.5)
+    border:2px solid rgba(10,10,10,0.5);
+    background-color: rgba(10,10,10,0.3);
 }
 #outputField{
     background: linear-gradient(to right, lightgrey, white);
@@ -20,4 +21,15 @@
 }
 .operator:active,#equals:active,#cancel:active{
     background-color: rgba(10,10,10,0.3);
+}
+#title{
+    text-align:center;
+    text-shadow: 1px 1px 0 #444;
+}
+table{
+    margin:auto;
+}
+body{
+    background: linear-gradient(to right, rgba(10,10,10,0.3), rgba(10,10,10,0.5));
+    text-shadow: 0.1px 0.1px 0 #444;
 }

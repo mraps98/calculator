@@ -1,10 +1,14 @@
 $(document).ready(function(){
+
+    // $("table").innerWidth($(window).innerWidth);
+    // $("table").innerHeight($(window).innerHeight);
+
     var a = 0, b = 0, operator;
 
     $(document).on('click','.key',function(){
         let current = $("#outputField").val();
         let input = $(this).attr("value");
-        a = (current * 10) + input;
+        a = (current * 10) + +input;
 console.log(a + " " + operator + " " + b);
         $("#outputField").val(a);
     });
